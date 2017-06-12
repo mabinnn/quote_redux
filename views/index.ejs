@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Homepage</title>
+    <style media="screen">
+      label, input, textarea {
+        display: block;
+        margin-top: 10px;
+        padding: 5px;
+      }
+      body {
+        margin-left: 20px;
+        background-color: rgb(189, 169, 190);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="body">
+      <div class="banner">
+        <h1>Welcome to Quoting Blog!</h1>
+      </div>
+      <div class="inputs">
+        <form class="forms" action="/submit" method="post">
+          <label for="name">Name: </label>
+          <input type="text" name="name" placeholder="Enter your name">
+          <label for="quote">Quotes: </label>
+          <textarea name="quotes" rows="8" cols="80" placeholder="Enter text here"></textarea>
+          <input type="submit" name="submit" value="Add my quote!">
+        </form>
+        <br>
+        <a href="/quotes"> Skip to my quotes!</a>
+      </div>
+    </div>
+  </body>
+</html>
